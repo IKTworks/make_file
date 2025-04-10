@@ -4,7 +4,7 @@ SRCS		= $(shell find $(SRCDIR) -name "*.cpp" -type f | xargs)
 OBJS		= $(SRCS:.cpp=.o)
 DEPENDS		= $(OBJS:.o=.d)
 CXX			= g++
-CXXFLAGS	= -Wall -Wextra -Werror -std=c++98 -pedantic -MMD -MP
+CXXFLAGS	= -Wall -Wextra -Werror -std=c++0x -pedantic -MMD -MP
 CXXFLAGS += -g
 INCDIR  = -I/usr/include/
 INCDIR  += -I/usr/local/include/
